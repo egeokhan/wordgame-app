@@ -26,8 +26,8 @@ Bandar Seri Begawan
 Sofia
 Ouagadougou
 Gitega
-Cambodia	Phnom Penh
-Cameroon	Yaounde
+Phnom Penh
+Yaounde
 Ottawa
 Praia
 Bangui
@@ -185,7 +185,7 @@ Montevideo
 Tashkent
 Port Vila
 Vatican City
-Venezuela	Caracas
+Caracas
 Hanoi
 Cardiff
 Sanaa

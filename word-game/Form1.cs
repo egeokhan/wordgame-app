@@ -31,17 +31,31 @@ namespace word_game
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Enabled = false;
-            progressBar1.ForeColor = Color.Blue;
         }
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyCode == Keys.Enter)
             {
-                Question1();
-                Question2();
-                Question3();
-                Question4();
-                Question5();
+                if (label1.Text == questions[0])
+                {
+                    Question1();
+                }
+                else if (label1.Text == questions[1])
+                {
+                    Question2();
+                }
+                else if (label1.Text == questions[2])
+                {
+                    Question3();
+                }
+                else if (label1.Text == questions[3])
+                {
+                    Question4();
+                }
+                else if(label1.Text == questions[4])
+                {
+                    Question5();
+                }
             }
         }
 
@@ -51,7 +65,7 @@ namespace word_game
             string[] answers = File.ReadAllLines(path);
             for (int i = 0; i < answers.Length; i++)
             {
-                if (progressBar1.Value != 100 && label1.Text == questions[4] && (textBox1.Text).ToLower() == answers[i].ToLower())
+                if (progressBar1.Value != 100 && (textBox1.Text).ToLower() == answers[i].ToLower())
                 {
                     if (listBox1.Items.Contains(answers[i]) == false)
                     {
@@ -60,6 +74,7 @@ namespace word_game
                     }
                 }
             }
+            label3.Text = score.ToString();
             textBox1.Clear();
         }
 
@@ -69,7 +84,7 @@ namespace word_game
             string[] answers = File.ReadAllLines(path);
             for (int i = 0; i < answers.Length; i++)
             {
-                if (progressBar1.Value != 100 && label1.Text == questions[3] && (textBox1.Text).ToLower() == answers[i].ToLower())
+                if (progressBar1.Value != 100 &&(textBox1.Text).ToLower() == answers[i].ToLower())
                 {
                     if (listBox1.Items.Contains(answers[i]) == false)
                     {
@@ -78,6 +93,7 @@ namespace word_game
                     }
                 }
             }
+            label3.Text = score.ToString();
             textBox1.Clear();
         }
 
@@ -87,7 +103,7 @@ namespace word_game
             string[] answers = File.ReadAllLines(path);
             for (int i = 0; i < answers.Length; i++)
             {
-                if (progressBar1.Value != 100 && label1.Text == questions[2] && (textBox1.Text).ToLower() == answers[i].ToLower())
+                if (progressBar1.Value != 100 &&(textBox1.Text).ToLower() == answers[i].ToLower())
                 {
                     if (listBox1.Items.Contains(answers[i]) == false)
                     {
@@ -96,6 +112,7 @@ namespace word_game
                     }
                 }
             }
+            label3.Text = score.ToString();
             textBox1.Clear();
         }
 
@@ -105,7 +122,7 @@ namespace word_game
             string[] answers = File.ReadAllLines(path);
             for (int i = 0; i < answers.Length; i++)
             {
-                if (progressBar1.Value != 100 && label1.Text == questions[1] && (textBox1.Text).ToLower() == answers[i].ToLower())
+                if (progressBar1.Value != 100 &&(textBox1.Text).ToLower() == answers[i].ToLower())
                 {
                     if (listBox1.Items.Contains(answers[i]) == false)
                     {
@@ -114,6 +131,7 @@ namespace word_game
                     }
                 }
             }
+            label3.Text = score.ToString();
             textBox1.Clear();
         }
 
@@ -123,7 +141,7 @@ namespace word_game
             string[] answers = File.ReadAllLines(path);
             for (int i = 0; i < answers.Length; i++)
             {
-                if (progressBar1.Value != 100 && label1.Text == questions[0] && (textBox1.Text).ToLower() == answers[i].ToLower())
+                if (progressBar1.Value != 100 &&(textBox1.Text).ToLower() == answers[i].ToLower())
                 {
                     if (listBox1.Items.Contains(answers[i]) == false)
                     {
@@ -132,11 +150,13 @@ namespace word_game
                     }
                 }
             }
+            label3.Text = score.ToString();
             textBox1.Clear();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            textBox1.Focus();
             button1.Text = "Next";
             progressBar1.Value = 100;
             timer1.Enabled=true;
