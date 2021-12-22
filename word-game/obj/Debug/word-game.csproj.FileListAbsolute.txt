@@ -1,0 +1,11 @@
+C:\CSharpProjeleri\WordGame\word-game\bin\Debug\word-game.exe.config
+C:\CSharpProjeleri\WordGame\word-game\bin\Debug\word-game.exe
+C:\CSharpProjeleri\WordGame\word-game\bin\Debug\word-game.pdb
+C:\CSharpProjeleri\WordGame\word-game\obj\Debug\word-game.csproj.AssemblyReference.cache
+C:\CSharpProjeleri\WordGame\word-game\obj\Debug\word-game.csproj.SuggestedBindingRedirects.cache
+C:\CSharpProjeleri\WordGame\word-game\obj\Debug\word_game.Form1.resources
+C:\CSharpProjeleri\WordGame\word-game\obj\Debug\word_game.Properties.Resources.resources
+C:\CSharpProjeleri\WordGame\word-game\obj\Debug\word-game.csproj.GenerateResource.cache
+C:\CSharpProjeleri\WordGame\word-game\obj\Debug\word-game.csproj.CoreCompileInputs.cache
+C:\CSharpProjeleri\WordGame\word-game\obj\Debug\word-game.exe
+C:\CSharpProjeleri\WordGame\word-game\obj\Debug\word-game.pdb

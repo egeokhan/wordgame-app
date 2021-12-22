@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "fff545d5-7c2a-4103-bc50-a49f49af8c9e": {
+      "ProjectGuid": "fff545d5-7c2a-4103-bc50-a49f49af8c9e",
+      "DisplayName": "word-game",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
