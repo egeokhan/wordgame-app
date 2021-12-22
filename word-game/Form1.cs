@@ -51,7 +51,7 @@ namespace word_game
             string[] answers = File.ReadAllLines(path);
             for (int i = 0; i < answers.Length; i++)
             {
-                if (label1.Text == questions[4] && (textBox1.Text).ToLower() == answers[i].ToLower())
+                if (progressBar1.Value != 100 && label1.Text == questions[4] && (textBox1.Text).ToLower() == answers[i].ToLower())
                 {
                     if (listBox1.Items.Contains(answers[i]) == false)
                     {
@@ -69,7 +69,7 @@ namespace word_game
             string[] answers = File.ReadAllLines(path);
             for (int i = 0; i < answers.Length; i++)
             {
-                if (label1.Text == questions[3] && (textBox1.Text).ToLower() == answers[i].ToLower())
+                if (progressBar1.Value != 100 && label1.Text == questions[3] && (textBox1.Text).ToLower() == answers[i].ToLower())
                 {
                     if (listBox1.Items.Contains(answers[i]) == false)
                     {
@@ -87,7 +87,7 @@ namespace word_game
             string[] answers = File.ReadAllLines(path);
             for (int i = 0; i < answers.Length; i++)
             {
-                if (label1.Text == questions[2] && (textBox1.Text).ToLower() == answers[i].ToLower())
+                if (progressBar1.Value != 100 && label1.Text == questions[2] && (textBox1.Text).ToLower() == answers[i].ToLower())
                 {
                     if (listBox1.Items.Contains(answers[i]) == false)
                     {
@@ -105,7 +105,7 @@ namespace word_game
             string[] answers = File.ReadAllLines(path);
             for (int i = 0; i < answers.Length; i++)
             {
-                if (label1.Text == questions[1] && (textBox1.Text).ToLower() == answers[i].ToLower())
+                if (progressBar1.Value != 100 && label1.Text == questions[1] && (textBox1.Text).ToLower() == answers[i].ToLower())
                 {
                     if (listBox1.Items.Contains(answers[i]) == false)
                     {
@@ -123,7 +123,7 @@ namespace word_game
             string[] answers = File.ReadAllLines(path);
             for (int i = 0; i < answers.Length; i++)
             {
-                if (label1.Text == questions[0] && (textBox1.Text).ToLower() == answers[i].ToLower())
+                if (progressBar1.Value != 100 && label1.Text == questions[0] && (textBox1.Text).ToLower() == answers[i].ToLower())
                 {
                     if (listBox1.Items.Contains(answers[i]) == false)
                     {
