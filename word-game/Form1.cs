@@ -23,6 +23,7 @@ namespace word_game
             };
         int i = 0;
         int score = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -69,7 +70,7 @@ namespace word_game
                 {
                     if (listBox1.Items.Contains(answers[i]) == false)
                     {
-                        listBox1.Items.Add(answers[i]);
+                        listBox1.Items.Add($"{answers[i]} ✓");
                         score += 10;
                     }
                 }
@@ -88,7 +89,7 @@ namespace word_game
                 {
                     if (listBox1.Items.Contains(answers[i]) == false)
                     {
-                        listBox1.Items.Add(answers[i]);
+                        listBox1.Items.Add($"{answers[i]} ✓");
                         score += 10;
                     }
                 }
@@ -107,7 +108,7 @@ namespace word_game
                 {
                     if (listBox1.Items.Contains(answers[i]) == false)
                     {
-                        listBox1.Items.Add(answers[i]);
+                        listBox1.Items.Add($"{answers[i]} ✓");
                         score += 10;
                     }
                 }
@@ -126,7 +127,7 @@ namespace word_game
                 {
                     if (listBox1.Items.Contains(answers[i]) == false)
                     {
-                        listBox1.Items.Add(answers[i]);
+                        listBox1.Items.Add($"{answers[i]} ✓");
                         score += 10;
                     }
                 }
@@ -145,7 +146,7 @@ namespace word_game
                 {
                     if (listBox1.Items.Contains(answers[i]) == false)
                     {
-                        listBox1.Items.Add(answers[i]);
+                        listBox1.Items.Add($"{answers[i]} ✓");
                         score += 10;
                     }
                 }
