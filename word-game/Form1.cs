@@ -313,6 +313,11 @@ namespace word_game
 
         private void button5_Click(object sender, EventArgs e)
         {
+            ToPurple();
+        }
+
+        private void ToPurple()
+        {
             this.BackColor = Color.Purple;
 
             listBox1.BackColor = Color.Purple;
