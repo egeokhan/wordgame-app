@@ -195,5 +195,138 @@ namespace word_game
                 progressBar1.Value = 100;
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ToYellow();
+        }
+
+        private void ToYellow()
+        {
+            this.BackColor = Color.Yellow;
+
+            listBox1.BackColor = Color.Yellow;
+            listBox1.ForeColor = Color.Black;
+
+            label1.ForeColor = Color.Black;
+            label2.ForeColor = Color.Black;
+            label3.ForeColor = Color.Black;
+
+            button1.BackColor = Color.Yellow;
+            button1.ForeColor = Color.Black; 
+
+            textBox1.ForeColor = Color.Black;
+            textBox1.BackColor = Color.Yellow;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ToBlack();
+        }
+
+        private void ToBlack()
+        {
+            this.BackColor = Color.Black;
+
+            listBox1.BackColor = Color.Black;
+            listBox1.ForeColor = Color.White;
+
+            label1.ForeColor = Color.White;
+            label2.ForeColor = Color.White;
+            label3.ForeColor = Color.White;
+
+            button1.BackColor = Color.Black;
+            button1.ForeColor = Color.White;
+
+            textBox1.ForeColor = Color.White;
+            textBox1.BackColor = Color.Black;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ToBlue();
+        }
+
+        private void ToBlue()
+        {
+            this.BackColor = Color.Blue;
+
+            listBox1.BackColor = Color.Blue;
+            listBox1.ForeColor = Color.White;
+
+            label1.ForeColor = Color.White;
+            label2.ForeColor = Color.White;
+            label3.ForeColor = Color.White;
+
+            button1.BackColor = Color.Blue;
+            button1.ForeColor = Color.White;
+
+            textBox1.ForeColor = Color.White;
+            textBox1.BackColor = Color.Blue;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            ToRed();
+        }
+
+        private void ToRed()
+        {
+            this.BackColor = Color.Red;
+
+            listBox1.BackColor = Color.Red;
+            listBox1.ForeColor = Color.White;
+
+            label1.ForeColor = Color.White;
+            label2.ForeColor = Color.White;
+            label3.ForeColor = Color.White;
+
+            button1.BackColor = Color.Red;
+            button1.ForeColor = Color.White;
+
+            textBox1.ForeColor = Color.White;
+            textBox1.BackColor = Color.Red;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ToGreen();
+        }
+
+        private void ToGreen()
+        {
+            this.BackColor = Color.Green;
+
+            listBox1.BackColor = Color.Green;
+            listBox1.ForeColor = Color.White;
+
+            label1.ForeColor = Color.White;
+            label2.ForeColor = Color.White;
+            label3.ForeColor = Color.White;
+
+            button1.BackColor = Color.Green;
+            button1.ForeColor = Color.White;
+
+            textBox1.ForeColor = Color.White;
+            textBox1.BackColor = Color.Green;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Purple;
+
+            listBox1.BackColor = Color.Purple;
+            listBox1.ForeColor = Color.White;
+
+            label1.ForeColor = Color.White;
+            label2.ForeColor = Color.White;
+            label3.ForeColor = Color.White;
+
+            button1.BackColor = Color.Purple;
+            button1.ForeColor = Color.White;
+
+            textBox1.ForeColor = Color.White;
+            textBox1.BackColor = Color.Purple;
+        }
     }
 }
