@@ -1,0 +1,10 @@
+Rock
+Metal
+Rap
+Hip-Hop
+Blues
+Classic Music
+Emotional Rap
+Pop
+Jazz
+Folk Music

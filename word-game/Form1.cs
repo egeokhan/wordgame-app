@@ -19,7 +19,12 @@ namespace word_game
             "Capital of countries?",
             "Popular Turkish dishes?",
             "Phone manufacturer brands?",
-            "European countries?"
+            "European countries?",
+            "C# data types?",
+            "Programming languages?",
+            "Rap artists?",
+            "Genres of music?",
+            "Computer equipment brands?"
             };
         int i = 0;
         int score = 0;
@@ -37,27 +42,143 @@ namespace word_game
         {
             if(e.KeyCode == Keys.Enter)
             {
-                if (label1.Text == questions[0])
+                    if (label1.Text == questions[0])
+                    {
+                        Question1();
+                    }
+                    else if (label1.Text == questions[1])
+                    {
+                        Question2();
+                    }
+                    else if (label1.Text == questions[2])
+                    {
+                        Question3();
+                    }
+                    else if (label1.Text == questions[3])
+                    {
+                        Question4();
+                    }
+                    else if (label1.Text == questions[4])
+                    {
+                        Question5();
+                    }
+                    else if(label1.Text == questions[5])
+                    {
+                        Question6();
+                    }
+                    else if (label1.Text == questions[6])
+                    {
+                        Question7();
+                    }
+                    else if (label1.Text == questions[7])
+                    {
+                        Question8();
+                    }
+                    else if (label1.Text == questions[8])
+                    {
+                        Question9();
+                    }
+                    else if (label1.Text == questions[9])
+                    {
+                        Question10();
+                    }
+
+            }
+        }
+
+        private void Question10()
+        {
+            string path = Path.Combine(Application.StartupPath, "question10.txt");
+            string[] answers = File.ReadAllLines(path);
+            for (int i = 0; i < answers.Length; i++)
+            {
+                if (progressBar1.Value != 100 && (textBox1.Text).ToLower() == answers[i].ToLower())
                 {
-                    Question1();
-                }
-                else if (label1.Text == questions[1])
-                {
-                    Question2();
-                }
-                else if (label1.Text == questions[2])
-                {
-                    Question3();
-                }
-                else if (label1.Text == questions[3])
-                {
-                    Question4();
-                }
-                else if(label1.Text == questions[4])
-                {
-                    Question5();
+                    if (listBox1.Items.Contains(answers[i]) == false)
+                    {
+                        listBox1.Items.Add(answers[i]);
+                        score += 10;
+                    }
                 }
             }
+            label3.Text = score.ToString();
+            textBox1.Clear();
+        }
+
+        private void Question9()
+        {
+            string path = Path.Combine(Application.StartupPath, "question9.txt");
+            string[] answers = File.ReadAllLines(path);
+            for (int i = 0; i < answers.Length; i++)
+            {
+                if (progressBar1.Value != 100 && (textBox1.Text).ToLower() == answers[i].ToLower())
+                {
+                    if (listBox1.Items.Contains(answers[i]) == false)
+                    {
+                        listBox1.Items.Add(answers[i]);
+                        score += 10;
+                    }
+                }
+            }
+            label3.Text = score.ToString();
+            textBox1.Clear();
+        }
+
+        private void Question8()
+        {
+            string path = Path.Combine(Application.StartupPath, "question8.txt");
+            string[] answers = File.ReadAllLines(path);
+            for (int i = 0; i < answers.Length; i++)
+            {
+                if (progressBar1.Value != 100 && (textBox1.Text).ToLower() == answers[i].ToLower())
+                {
+                    if (listBox1.Items.Contains(answers[i]) == false)
+                    {
+                        listBox1.Items.Add(answers[i]);
+                        score += 10;
+                    }
+                }
+            }
+            label3.Text = score.ToString();
+            textBox1.Clear();
+        }
+
+        private void Question7()
+        {
+            string path = Path.Combine(Application.StartupPath, "question7.txt");
+            string[] answers = File.ReadAllLines(path);
+            for (int i = 0; i < answers.Length; i++)
+            {
+                if (progressBar1.Value != 100 && (textBox1.Text).ToLower() == answers[i].ToLower())
+                {
+                    if (listBox1.Items.Contains(answers[i]) == false)
+                    {
+                        listBox1.Items.Add(answers[i]);
+                        score += 10;
+                    }
+                }
+            }
+            label3.Text = score.ToString();
+            textBox1.Clear();
+        }
+
+        private void Question6()
+        {
+            string path = Path.Combine(Application.StartupPath, "question6.txt");
+            string[] answers = File.ReadAllLines(path);
+            for (int i = 0; i < answers.Length; i++)
+            {
+                if (progressBar1.Value != 100 && (textBox1.Text).ToLower() == answers[i].ToLower())
+                {
+                    if (listBox1.Items.Contains(answers[i]) == false)
+                    {
+                        listBox1.Items.Add(answers[i]);
+                        score += 10;
+                    }
+                }
+            }
+            label3.Text = score.ToString();
+            textBox1.Clear();
         }
 
         private void Question5()
@@ -167,11 +288,11 @@ namespace word_game
 
         private void WriteQuestion()
         {
-            if(i == 4)
+            if(i == questions.Length-1)
             {
                 button1.Text = "Finish";
             }
-            if(i >= 5)
+            if(i >= questions.Length)
             {
                 MessageBox.Show($"Game Over! Score: {score}");
                 this.Close();
