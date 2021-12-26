@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Collections;
 
 namespace word_game
 {
@@ -26,9 +27,10 @@ namespace word_game
             "Genres of music?",
             "Computer equipment brands?"
             };
+        List<string> lines = new List<string>();
         int i = 0;
         int score = 0;
-
+        Random ques = new Random();
         public Form1()
         {
             InitializeComponent();
@@ -285,7 +287,6 @@ namespace word_game
             listBox1.Items.Clear();
             WriteQuestion();
         }
-
         private void WriteQuestion()
         {
             if(i == questions.Length-1)
@@ -338,6 +339,8 @@ namespace word_game
 
             textBox1.ForeColor = Color.Black;
             textBox1.BackColor = Color.Yellow;
+            button8.BackColor = Color.Yellow;
+            button8.ForeColor = Color.Black;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -361,6 +364,9 @@ namespace word_game
 
             textBox1.ForeColor = Color.White;
             textBox1.BackColor = Color.Black;
+
+            button8.BackColor= Color.Black;
+            button8.ForeColor= Color.White;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -384,6 +390,9 @@ namespace word_game
 
             textBox1.ForeColor = Color.White;
             textBox1.BackColor = Color.Blue;
+
+            button8.BackColor = Color.Blue;
+            button8.ForeColor = Color.White;
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -407,6 +416,9 @@ namespace word_game
 
             textBox1.ForeColor = Color.White;
             textBox1.BackColor = Color.Red;
+
+            button8.BackColor = Color.Red;
+            button8.ForeColor = Color.White;
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -430,6 +442,9 @@ namespace word_game
 
             textBox1.ForeColor = Color.White;
             textBox1.BackColor = Color.Green;
+
+            button8.BackColor = Color.Green;
+            button8.ForeColor = Color.White;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -443,7 +458,6 @@ namespace word_game
 
             listBox1.BackColor = Color.Purple;
             listBox1.ForeColor = Color.White;
-
             label1.ForeColor = Color.White;
             label2.ForeColor = Color.White;
             label3.ForeColor = Color.White;
@@ -453,6 +467,34 @@ namespace word_game
 
             textBox1.ForeColor = Color.White;
             textBox1.BackColor = Color.Purple;
+
+            button8.BackColor = Color.Purple;
+            button8.ForeColor = Color.White;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            DialogResult color = new DialogResult();
+            color = colorDialog1.ShowDialog();
+            if (color == DialogResult.OK)
+            {
+                this.BackColor = colorDialog1.Color;
+                button8.BackColor= colorDialog1.Color;
+                textBox1.BackColor= colorDialog1.Color;
+                button1.BackColor= colorDialog1.Color;
+                listBox1.BackColor= colorDialog1.Color;
+                if(listBox1.BackColor == Color.White)
+                {
+
+                    label1.ForeColor = Color.Black;
+                    label2.ForeColor = Color.Black;
+                    label3.ForeColor = Color.Black;
+                    button1.ForeColor = Color.Black;
+                    button8.ForeColor = Color.Black;
+                    listBox1.ForeColor = Color.Black;
+                    textBox1.ForeColor= Color.Black;
+                }
+            }
         }
     }
 }

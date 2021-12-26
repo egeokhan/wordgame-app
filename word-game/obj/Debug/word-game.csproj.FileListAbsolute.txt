@@ -9,3 +9,14 @@ C:\CSharpProjeleri\WordGame\word-game\obj\Debug\word-game.csproj.GenerateResourc
 C:\CSharpProjeleri\WordGame\word-game\obj\Debug\word-game.csproj.CoreCompileInputs.cache
 C:\CSharpProjeleri\WordGame\word-game\obj\Debug\word-game.exe
 C:\CSharpProjeleri\WordGame\word-game\obj\Debug\word-game.pdb
+C:\Users\EGE\source\repos\WordGame\word-game\bin\Debug\word-game.exe.config
+C:\Users\EGE\source\repos\WordGame\word-game\bin\Debug\word-game.exe
+C:\Users\EGE\source\repos\WordGame\word-game\bin\Debug\word-game.pdb
+C:\Users\EGE\source\repos\WordGame\word-game\obj\Debug\word-game.csproj.AssemblyReference.cache
+C:\Users\EGE\source\repos\WordGame\word-game\obj\Debug\word-game.csproj.SuggestedBindingRedirects.cache
+C:\Users\EGE\source\repos\WordGame\word-game\obj\Debug\word_game.Form1.resources
+C:\Users\EGE\source\repos\WordGame\word-game\obj\Debug\word_game.Properties.Resources.resources
+C:\Users\EGE\source\repos\WordGame\word-game\obj\Debug\word-game.csproj.GenerateResource.cache
+C:\Users\EGE\source\repos\WordGame\word-game\obj\Debug\word-game.csproj.CoreCompileInputs.cache
+C:\Users\EGE\source\repos\WordGame\word-game\obj\Debug\word-game.exe
+C:\Users\EGE\source\repos\WordGame\word-game\obj\Debug\word-game.pdb
