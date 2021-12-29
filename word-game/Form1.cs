@@ -391,6 +391,7 @@ namespace word_game
             label2.ForeColor = Color.Black;
             label3.ForeColor = Color.Black;
             label4.ForeColor = Color.Black;
+            label5.ForeColor = Color.Black;
 
             button1.BackColor = Color.Yellow;
             button1.ForeColor = Color.Black; 
@@ -418,6 +419,7 @@ namespace word_game
             label2.ForeColor = Color.White;
             label3.ForeColor = Color.White;
             label4.ForeColor = Color.White;
+            label5.ForeColor = Color.White;
 
             button1.BackColor = Color.Black;
             button1.ForeColor = Color.White;
@@ -445,6 +447,7 @@ namespace word_game
             label2.ForeColor = Color.White;
             label3.ForeColor = Color.White;
             label4.ForeColor = Color.White;
+            label5.ForeColor = Color.White;
 
             button1.BackColor = Color.Blue;
             button1.ForeColor = Color.White;
@@ -472,6 +475,7 @@ namespace word_game
             label2.ForeColor = Color.White;
             label3.ForeColor = Color.White;
             label4.ForeColor = Color.White;
+            label5.ForeColor = Color.White;
 
             button1.BackColor = Color.Red;
             button1.ForeColor = Color.White;
@@ -500,6 +504,7 @@ namespace word_game
             label2.ForeColor = Color.White;
             label3.ForeColor = Color.White;
             label4.ForeColor = Color.White;
+            label5.ForeColor = Color.White;
 
             button1.BackColor = Color.Green;
             button1.ForeColor = Color.White;
@@ -527,6 +532,7 @@ namespace word_game
             label1.ForeColor = Color.White;
             label2.ForeColor = Color.White;
             label3.ForeColor = Color.White;
+            label4.ForeColor = Color.White;
             label4.ForeColor = Color.White;
 
             button1.BackColor = Color.Purple;
@@ -557,6 +563,7 @@ namespace word_game
                     label2.ForeColor = Color.Black;
                     label3.ForeColor = Color.Black;
                     label4.ForeColor = Color.Black;
+                    label5.ForeColor = Color.Black;
                     button1.ForeColor = Color.Black;
                     button8.ForeColor = Color.Black;
                     listBox1.ForeColor = Color.Black;
