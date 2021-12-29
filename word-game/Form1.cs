@@ -30,6 +30,9 @@ namespace word_game
             };
         int i = 0;
         int score = 0;
+        string bestscore;
+        int allscore = 0;
+        string result;
         Random ques = new Random();
         public Form1()
         {
@@ -100,6 +103,7 @@ namespace word_game
                     {
                         listBox1.Items.Add(answers[i]);
                         score += 10;
+                        allscore += 10;
                     }
                 }
             }
@@ -119,6 +123,7 @@ namespace word_game
                     {
                         listBox1.Items.Add(answers[i]);
                         score += 10;
+                        allscore += 10;
                     }
                 }
             }
@@ -138,6 +143,7 @@ namespace word_game
                     {
                         listBox1.Items.Add(answers[i]);
                         score += 10;
+                        allscore += 10;
                     }
                 }
             }
@@ -157,6 +163,7 @@ namespace word_game
                     {
                         listBox1.Items.Add(answers[i]);
                         score += 10;
+                        allscore += 10;
                     }
                 }
             }
@@ -176,6 +183,7 @@ namespace word_game
                     {
                         listBox1.Items.Add(answers[i]);
                         score += 10;
+                        allscore += 10;
                     }
                 }
             }
@@ -195,6 +203,7 @@ namespace word_game
                     {
                         listBox1.Items.Add(answers[i]);
                         score += 10;
+                        allscore += 10;
                     }
                 }
             }
@@ -214,6 +223,7 @@ namespace word_game
                     {
                         listBox1.Items.Add(answers[i]);
                         score += 10;
+                        allscore += 10;
                     }
                 }
             }
@@ -233,6 +243,7 @@ namespace word_game
                     {
                         listBox1.Items.Add(answers[i]);
                         score += 10;
+                        allscore += 10;
                     }
                 }
             }
@@ -252,6 +263,7 @@ namespace word_game
                     {
                         listBox1.Items.Add(answers[i]);
                         score += 10;
+                        allscore += 10;
                     }
                 }
             }
@@ -271,6 +283,7 @@ namespace word_game
                     {
                         listBox1.Items.Add(answers[i]);
                         score += 10;
+                        allscore += 10;
                     }
                 }
             }
@@ -293,14 +306,14 @@ namespace word_game
 
         private void BestScore()
         {
-            if(i < questions.Length)
+            if (i <= questions.Length)
             {
                 try
                 {
-                    if (Convert.ToInt32(label3.Text) > Convert.ToInt32(listBox2.Items[0]))
+                    if (Convert.ToInt32(label3.Text) > Convert.ToInt32(label5.Text))
                     {
-                        listBox2.Items.RemoveAt(0);
-                        listBox2.Items.Add(label3.Text);
+                        label5.Text = label3.Text;
+                        bestscore = label5.Text;
                     }
                 }
                 catch (Exception)
@@ -317,7 +330,29 @@ namespace word_game
             }
             if(i >= questions.Length)
             {
-                MessageBox.Show($"Game Over!");
+                if (Convert.ToInt32(label3.Text) > Convert.ToInt32(label5.Text))
+                {
+                    bestscore = label3.Text;
+                    label5.Text = bestscore;
+                    label3.Text = "0";
+                }
+                if(allscore <= 50)
+                {
+                    result = "You should improve yourself...";
+                }
+                if(allscore > 50 && allscore <= 100)
+                {
+                    result = "Nice! but its not enough...";
+                }
+                if(allscore > 100 && allscore <= 180)
+                {
+                    result = "Amazing! you are good at this...";
+                }
+                if(allscore > 180)
+                {
+                    result = "You're unbelievable! 10/10";
+                }
+                MessageBox.Show($"Game Over! \nYour Best Score: {bestscore} \nYour Total Score: {allscore} \n{result} ");
                 this.Close();
                 i = 0;
             }
@@ -365,9 +400,6 @@ namespace word_game
 
             button8.BackColor = Color.Yellow;
             button8.ForeColor = Color.Black;
-
-            listBox2.BackColor = Color.Yellow;
-            listBox2.ForeColor = Color.Black;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -395,9 +427,6 @@ namespace word_game
 
             button8.BackColor= Color.Black;
             button8.ForeColor= Color.White;
-
-            listBox2.BackColor = Color.Black;
-            listBox2.ForeColor = Color.White;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -411,8 +440,6 @@ namespace word_game
 
             listBox1.BackColor = Color.Blue;
             listBox1.ForeColor = Color.White;
-            listBox2.BackColor = Color.Blue;
-            listBox2.ForeColor = Color.White;
 
             label1.ForeColor = Color.White;
             label2.ForeColor = Color.White;
@@ -440,8 +467,6 @@ namespace word_game
 
             listBox1.BackColor = Color.Red;
             listBox1.ForeColor = Color.White;
-            listBox2.BackColor = Color.Red;
-            listBox2.ForeColor = Color.White;
 
             label1.ForeColor = Color.White;
             label2.ForeColor = Color.White;
@@ -469,8 +494,7 @@ namespace word_game
 
             listBox1.BackColor = Color.Green;
             listBox1.ForeColor = Color.White;
-            listBox2.BackColor = Color.Green;
-            listBox2.ForeColor = Color.White;
+
 
             label1.ForeColor = Color.White;
             label2.ForeColor = Color.White;
@@ -498,8 +522,7 @@ namespace word_game
 
             listBox1.BackColor = Color.Purple;
             listBox1.ForeColor = Color.White;
-            listBox2.BackColor = Color.Purple;
-            listBox2.ForeColor = Color.White;
+
 
             label1.ForeColor = Color.White;
             label2.ForeColor = Color.White;
@@ -527,7 +550,6 @@ namespace word_game
                 textBox1.BackColor= colorDialog1.Color;
                 button1.BackColor= colorDialog1.Color;
                 listBox1.BackColor= colorDialog1.Color;
-                listBox2.BackColor = colorDialog1.Color;
                 if (listBox1.BackColor == Color.White)
                 {
 
@@ -538,7 +560,6 @@ namespace word_game
                     button1.ForeColor = Color.Black;
                     button8.ForeColor = Color.Black;
                     listBox1.ForeColor = Color.Black;
-                    listBox2.ForeColor = Color.Black;
                     textBox1.ForeColor= Color.Black;
                 }
             }
