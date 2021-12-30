@@ -1,0 +1,13 @@
+byte
+sbyte
+short
+ushort
+int
+uint
+long
+float
+double
+decimal
+char
+string
+bool

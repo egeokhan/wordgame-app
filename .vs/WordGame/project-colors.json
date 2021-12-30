@@ -5,7 +5,12 @@
       "ProjectGuid": "fff545d5-7c2a-4103-bc50-a49f49af8c9e",
       "DisplayName": "word-game",
       "ColorIndex": 0
+    },
+    "6ab09c2b-e581-46b7-8718-7528e03b188d": {
+      "ProjectGuid": "6ab09c2b-e581-46b7-8718-7528e03b188d",
+      "DisplayName": "two-player",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

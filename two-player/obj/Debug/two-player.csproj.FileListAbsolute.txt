@@ -1,0 +1,11 @@
+C:\Users\EGE\source\repos\WordGame\two-player\bin\Debug\two-player.exe.config
+C:\Users\EGE\source\repos\WordGame\two-player\bin\Debug\two-player.exe
+C:\Users\EGE\source\repos\WordGame\two-player\bin\Debug\two-player.pdb
+C:\Users\EGE\source\repos\WordGame\two-player\obj\Debug\two-player.csproj.AssemblyReference.cache
+C:\Users\EGE\source\repos\WordGame\two-player\obj\Debug\two-player.csproj.SuggestedBindingRedirects.cache
+C:\Users\EGE\source\repos\WordGame\two-player\obj\Debug\two_player.Form1.resources
+C:\Users\EGE\source\repos\WordGame\two-player\obj\Debug\two_player.Properties.Resources.resources
+C:\Users\EGE\source\repos\WordGame\two-player\obj\Debug\two-player.csproj.GenerateResource.cache
+C:\Users\EGE\source\repos\WordGame\two-player\obj\Debug\two-player.csproj.CoreCompileInputs.cache
+C:\Users\EGE\source\repos\WordGame\two-player\obj\Debug\two-player.exe
+C:\Users\EGE\source\repos\WordGame\two-player\obj\Debug\two-player.pdb
