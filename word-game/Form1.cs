@@ -15,6 +15,7 @@ namespace word_game
 {
     public partial class Form1 : Form
     {
+        string[] lines = new string[1]; 
         string[] questions =
             {
             "Organs of our body?",
@@ -306,14 +307,22 @@ namespace word_game
 
         private void BestScore()
         {
-            if (i <= questions.Length)
+            int j = 0;
+            while (j < 10)
             {
+                j++;
+                string path = Path.Combine(Application.StartupPath, "bestscore.txt");
+                lines = File.ReadAllLines(path);
+                string bestscore = lines[0];
+                label5.Text = lines[0];
                 try
                 {
-                    if (Convert.ToInt32(label3.Text) > Convert.ToInt32(label5.Text))
+                    if (Convert.ToInt32(bestscore) < Convert.ToInt32(label3.Text))
                     {
-                        label5.Text = label3.Text;
-                        bestscore = label5.Text;
+                        bestscore = label3.Text;
+                        StreamWriter sw = new StreamWriter(path);
+                        sw.Write(bestscore);
+                        sw.Close();
                     }
                 }
                 catch (Exception)
